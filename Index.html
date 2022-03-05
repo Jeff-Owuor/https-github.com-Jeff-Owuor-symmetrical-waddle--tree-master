@@ -15,20 +15,44 @@
               <img src="https://i.pinimg.com/originals/7d/b5/ec/7db5ec91683750412a7b26b2e2aee962.jpg" alt="" class="image">
         <div class="container2">
             <p>This application takes the output submitted  in the form and based on the gender and the day of birth gives an Akan name.</p>
-            <form class="formation">
-                <label class="dob">
-                    Date Of Birth:
-                    <input type="date" required>
-                </label>
-                <label class="gender">
-                    Gender:
-                    <select name="gender">
+            <form  class="formation">
+                <div class="container4">
+                    <label for="century">
+                        Century digits:
+                        <input type="number" placeholder="Please enter the century you were born" id="century">
+                    </label>
+                </div>
+                <div class="container4">
+                    <label for="year">
+                        Last two digits of birth year:
+                        <input type="number" placeholder="Please enter the last two digits of the year born" id="year">
+                    </label>
+                </div>
+                <div class="container4">
+                    <label for="month">
+                        Birthday month:
+                        <input type="number" placeholder="Please enter your birthday month" id="month">
+                    </label>
+                </div>
+                <div class="container4">
+                    <label for="day">
+                        Day:
+                        <input type="number" placeholder="Please enter the day you were born" id="day">
+            
+                    </label>
+                </div>
+                <div class="container4">
+                    <label class="gender" for="yeah">Gender: </label>
+                    
+                    <select name="gender" id="yeah" >
                         <option value="Male">Male</option>
                         <option value="female">Female</option>
                         <option value="other">Rather Not Specify</option>
                     </select>
-                </label>
-                <button type="submit">Submit</button>
+               
+                </div>
+               
+                <button type="submit" id="button-el">Submit</button>
             </form>
         </div>
         </div>
