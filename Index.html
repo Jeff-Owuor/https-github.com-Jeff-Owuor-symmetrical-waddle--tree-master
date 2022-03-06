@@ -15,31 +15,37 @@
               <img src="https://i.pinimg.com/originals/7d/b5/ec/7db5ec91683750412a7b26b2e2aee962.jpg" alt="" class="image">
         <div class="container2">
             <p>This application takes the output submitted  in the form and based on the gender and the day of birth gives an Akan name.</p>
-            <form  class="formation">
+            <form  class="formation" method="post">
                 <div class="container4">
                     <label for="century">
                         Century digits:
-                        <input type="number" placeholder="Please enter the century you were born" id="century">
+                        <input type="number" placeholder="Please enter the century you were born" id="century" required>
+                        
                     </label>
+                    <span class="render"></span>
                 </div>
                 <div class="container4">
                     <label for="year">
                         Last two digits of birth year:
-                        <input type="number" placeholder="Please enter the last two digits of the year born" id="year">
+                        <input type="number" placeholder="Please enter the last two digits of the year born" id="year" required>
+                        
                     </label>
+                    <span class="render2"></span>
                 </div>
                 <div class="container4">
                     <label for="month">
                         Birthday month:
-                        <input type="number" placeholder="Please enter your birthday month" id="month">
+                        <input type="number" placeholder="Please enter your birthday month" id="month" required>
                     </label>
+                    <span class="render3"></span>
                 </div>
                 <div class="container4">
                     <label for="day">
                         Day:
-                        <input type="number" placeholder="Please enter the day you were born" id="day">
+                        <input type="number" placeholder="Please enter the day you were born" id="day" required>
             
                     </label>
+                    <span class="render4"></span>
                 </div>
                 <div class="container4">
                     <label class="gender" for="yeah">Gender: </label>
