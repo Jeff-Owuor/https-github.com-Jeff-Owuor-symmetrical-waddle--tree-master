@@ -4,6 +4,7 @@ let yearOfBirth=document.getElementById("year");
 let monthOfBirth=document.getElementById("month");
 let birthday=document.getElementById("day");
 let gender=document.getElementById("yeah")
+let buttonEl=document.getElementById("button-el");
 let maleNames={"Sunday":"Kwasi",
                "Monday":"Kwadwo",
                "Tuesday":"Kwabena",
@@ -18,18 +19,24 @@ let render=document.querySelector(".render");
 let render2=document.querySelector(".render2");
 let render3=document.querySelector(".render3");
 let render4=document.querySelector(".render4");
+let render5=document.querySelector(".render5")
+//submit event handler on the form element
 formEl.addEventListener("submit",(x)=>{
         x.preventDefault();
        checkedInputs();
-       nameAllocated();
+       
 })
+//click event handler for the button 
+// buttonEl.addEventListener("click",()=>{
+//     nameAllocated();
+// });
 //The following function checks valid user input
 function checkedInputs(){
     let century=centuryOfBirth.value;
     let year=yearOfBirth.value;
     let month=monthOfBirth.value;
     let day=birthday.value;
-    if(century=""||century<19||century>21){
+    if(century=""||century<1||century>21){
         render.innerText="Invalid input try again";
     }else if(year<0||year>99){
         render2.innerText="Invalid input try again";
@@ -39,7 +46,7 @@ function checkedInputs(){
         render4.innerText="Invalid input try again";
     }
     else{
-        console.log("Valid input continue")
+        render5.innerText="Valid input, you will receive your akan name shortly";
     }
 }
 //The function below gives a name according to the Akan naming system
