@@ -19,25 +19,25 @@ formEl.addEventListener("submit",(x)=>{
        checkedInputs();
 })
 
-// function checkedInputs(){
-//     let century=centuryOfBirth.value;
-//     let year=yearOfBirth.value;
-//     let month=monthOfBirth.value;
-//     let day=birthday.value;
-//     let genders=gender.value;
-//     if(century=""||century<19||century>21){
-//         render.innerText="Invalid input try again";
-//     }else if(year<0||year>99){
-//         render2.innerText="Invalid input try again";
-//     }else if(month<1||month>12){
-//         render3.innerText="Invalid input try again";
-//     }else if(day<1||day>31){
-//         render4.innerText="Invalid input try again";
-//     }
-//     else{
-//         console.log("Valid input continue")
-//     }
-// }
+function checkedInputs(){
+    let century=centuryOfBirth.value;
+    let year=yearOfBirth.value;
+    let month=monthOfBirth.value;
+    let day=birthday.value;
+    let genders=gender.value;
+    if(century=""||century<19||century>21){
+        render.innerText="Invalid input try again";
+    }else if(year<0||year>99){
+        render2.innerText="Invalid input try again";
+    }else if(month<1||month>12){
+        render3.innerText="Invalid input try again";
+    }else if(day<1||day>31){
+        render4.innerText="Invalid input try again";
+    }
+    else{
+        console.log("Valid input continue")
+    }
+}
 function nameAllocated(){
 
 }
