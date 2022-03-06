@@ -27,9 +27,9 @@ formEl.addEventListener("submit",(x)=>{
        
 })
 //click event handler for the button 
-// buttonEl.addEventListener("click",()=>{
-//     nameAllocated();
-// });
+buttonEl.addEventListener("click",()=>{
+    nameAllocated();
+});
 //The following function checks valid user input
 function checkedInputs(){
     let century=centuryOfBirth.value;
