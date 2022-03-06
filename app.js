@@ -13,10 +13,7 @@ let maleNames={"Sunday":"Kwasi",
                "Saturday":"Kwame"
 }
 let femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-let cent=(century/4)-2*century-1;
-let yearCalc=5*year/4;
-let another=26*(month+1)/10;
-let final=(cent+yearCalc+another+day)%7;
+//the variables below are grabbed from spans that will in turn render error messages upon invalid input
 let render=document.querySelector(".render");
 let render2=document.querySelector(".render2");
 let render3=document.querySelector(".render3");
