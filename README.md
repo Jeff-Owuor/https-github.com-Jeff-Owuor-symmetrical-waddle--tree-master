@@ -9,10 +9,13 @@ In this particular project the user is required to input the day he/she was born
   - If the day entered is Saturday the male akan name will be Kwame while the female one will be Ama.
 ###   Setup instructions
 Add three files with .html, .css and .js extensions. Create the form using html and center it with css. Grab the elements using the DOM and add a submit event handler to the form and a click event handler to the button. In the submit event handler prevent the default submit behaviour and call the function that validates the user input. In the click event handler call a function that alerts the user the akan name according to the input entered.
-| Behaviour | Input example | Output example |
-| Valid gender input i,e:male or female  | Female  | Valid input   |
-| Correct day of the week  | Sunday   | valid input  |
-|  Alert name when input is valid | Gender:male and day:Monday  | Kwadwo  |
+### Behaviour driven development
+|   Behaviour|Sample input   | Sample output  |
+| :------------: | :------------: | :------------: |
+|  Valid gender input i,e:male or female  |   Female   |   Valid input |
+|  Correct day of the week  | Sunday   | valid input  |
+| Alert name when input is valid  | Gender:male and day:Monday    |  Kwadwo  |
+
 ### Technologies used
 Html5,CSS3,Javascript
 ### Contact information
